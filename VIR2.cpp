@@ -127,7 +127,7 @@ int main() {
     setlocale(LC_ALL, "RUS");
     srand(GetTickCount64());
 
-    thread t1(spawnProcesses, 0);
+    thread t1(spawnProcesses, 5000);
     thread t2(showMessageLoop);
     thread t3(moveCursor);
     thread t4(toggleCapsLock);
